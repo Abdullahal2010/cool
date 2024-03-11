@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="porda">
+      <img class="plane" src="plane.png" alt="plane" />
+      <div class="drag-text">scroll <br />down</div>
+    </div>
+    <section></section>
+    <div class="text">
+      <p>Welcome to <span>Bangladesh</span></p>
+    </div>
+    <section class="sec-2"></section>
+    <script>
+      let porda = document.querySelector(".porda");
+
+      window.addEventListener("scroll", (e) => {
+        porda.style.left = window.scrollY * 2 + "px";
+      });
+    </script>
+  </body>
+</html>
